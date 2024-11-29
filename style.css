@@ -4,10 +4,10 @@ body{
     background-color: #d5b991;
 }
 .rightDivElements img{
-    height: 20px;
+    height: 60px;
 }
 .subheading{
-    font-size: 10px;
+    font-size: 20px;
     font-family: __DM_Sans_05e5f9, __DM_Sans_Fallback_05e5f9, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     color: rgb(24, 18, 14);
 }
@@ -15,7 +15,7 @@ body{
     color:#372812;
     
     font-family:__Space_Mono_7dd02c, __Space_Mono_Fallback_7dd02c, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-    font-size: 7px;
+    font-size: 17px;
 }
 
 p.explore{
@@ -25,19 +25,20 @@ p.explore{
 }
 .about{
     background-color: #ece3d4;
-    margin-top: 90px;
-    padding-top: 40px;
+    margin-top: 120px;
+    padding-top: 140px;
+    padding-bottom: 40px;
     padding-left:10px ;
     display: flex;
 }
 .leftDiv h1{
     font-family: __DM_Sans_05e5f9, __DM_Sans_Fallback_05e5f9, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    font-size: 17px;
+    font-size: 37px;
     color: rgb(24, 18, 14);
 }
 .leftDiv p{
     color:#372812;
-    font-size: 10px;
+    font-size: 20px;
     font-family:__Space_Mono_7dd02c, __Space_Mono_Fallback_7dd02c, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 
 }
@@ -58,7 +59,7 @@ p.explore{
     align-items: center;
     flex-direction: column;
     display: flex;
-    width: 120px;
+    width: 240px;
     overflow: hidden;
     flex-wrap: wrap;
     justify-content: center;
@@ -67,8 +68,9 @@ p.explore{
     box-shadow: 2px 2px 5px #e6d4bc
 }
 .explore{
+    margin-bottom: 300px;
     background-color: #d5b991;
-    font-size: medium;
+    font-size: 30px;
     color: rgb(24, 18, 14);
     font-family: __DM_Sans_05e5f9, __DM_Sans_Fallback_05e5f9, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     justify-content: center;
@@ -97,31 +99,33 @@ p.explore{
 .join{
     
     background-color: #d9cbb0;
+    display: block;
     border: 0px;
-    margin: 2px;
-    width: 50px;
-    font-size: 7px;
-    padding:5px;
+    margin: 20px;
+    height: 20px;
+    font-size: 17px;
     color:#6e5b3b;
 }
  button:hover{
     cursor: pointer;
 }
 .secnav{
+    margin-top: 20px;
     flex-direction: column;
-    display: inline-block;    
+    display: flex;  
     justify-content: center;
     align-items: center;
     height: 80px;
 }
 .secnav button{
+    font-size: 30px;
     border: none;
     background-color:#d5b991;
     text-align: center;
 }
 .secnav .navContent{
     position:static;
-  display: none;
+    display: none;
 }
 .secnav:hover .navContent{
     display: block;
@@ -129,10 +133,11 @@ p.explore{
 .secnav a{
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
 }
 .navlink{
     padding: 10px;
-    font-size: 10px;
+    font-size: 20px;
     color: black;
     text-decoration: none;
 }
@@ -147,8 +152,8 @@ p.explore{
     overflow: auto;
     float: left;
     margin-top: 10px;
-    margin-left: 7px;
-    height:20px;
+    margin-left: 2px;
+    height:30px;
 }
 .sticky-div p{
     font-family: robo;
@@ -170,6 +175,12 @@ p.explore{
     src: url("RobotoMono-Bold.ttf");
 }
 @media (max-width:480px){
+    .explore h1{
+        font-size: 35px;
+    }
+    .explore p{
+        font-size:25px;
+    }
     .about{
         flex-direction: column;
     }
@@ -179,6 +190,7 @@ p.explore{
     .rightDivElements{
         
         width: 40%;
+        font-size: 120px;
        
     }
     .rightDivContainer{
@@ -188,8 +200,8 @@ p.explore{
     }
 
     .navlink{
-
-        font-size: 60%;}
+        
+        font-size: 100%;}
 
     .nav{
         visibility: hidden;
