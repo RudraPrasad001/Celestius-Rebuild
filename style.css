@@ -13,7 +13,7 @@ body{
     padding-bottom: 500px;
 }
 #contact{
-padding-top: 100px;
+padding-top: 250px;
 }
 #projects{
     padding-top: 150px;
@@ -62,6 +62,10 @@ nav{
     display: flex;
     font-size: 17px;
     color:#6e5b3b;
+}
+.sendMessage:hover{
+    background-color: #bca687;
+    cursor: pointer;
 }
 textarea:focus{
     border: 10px solid #33250f;
@@ -189,6 +193,18 @@ p.explore{
     color:#372812;
     font-family:__Space_Mono_7dd02c, __Space_Mono_Fallback_7dd02c, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
+.about.in-view{
+    animation: aboutanim 2s ease;
+}
+.upcoming.in-view{
+    animation: aboutanim 2s ease;
+}
+.projects.in-view{
+    animation: aboutanim 2s ease;
+}
+.Contact.in-view{
+    animation:aboutanim 2s ease;
+}
 .about{
     background-color: #ece3d4;
     padding-left: 50px;
@@ -233,7 +249,7 @@ p.explore{
 .explore{
     padding: 140px;
     margin-top: 50px;
-    padding-bottom: 250px;
+    padding-bottom: 320px;
     justify-items: center;
     vertical-align: middle;
     align-items: center;
@@ -326,12 +342,19 @@ p.explore{
     background-color: #d5b991;
     top:0px;
 }
-
+@keyframes aboutanim{
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
 @font-face{
     font-family: robo;
     src: url("RobotoMono-Bold.ttf");
 }
 @media (max-width:480px){
+
+    .form textarea{
+        width: 80%;
+    }
 
     .projects{
         padding-top: 50px;
