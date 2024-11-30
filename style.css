@@ -20,7 +20,6 @@ body{
 
 p.explore{
     color:#372812;
-    
     font-family:__Space_Mono_7dd02c, __Space_Mono_Fallback_7dd02c, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 .about{
@@ -68,14 +67,17 @@ p.explore{
     box-shadow: 2px 2px 5px #e6d4bc
 }
 .explore{
-    margin-bottom: 300px;
+    padding: 140px;
+    justify-items: center;
+    vertical-align: middle;
+    align-items: center;
     background-color: #d5b991;
     font-size: 30px;
     color: rgb(24, 18, 14);
     font-family: __DM_Sans_05e5f9, __DM_Sans_Fallback_05e5f9, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     justify-content: center;
     text-align: center;
-    display: flex;
+    display: flexbox;
     flex-wrap: wrap;
 }
 .mainLink{
@@ -99,10 +101,11 @@ p.explore{
 .join{
     
     background-color: #d9cbb0;
-    display: block;
+    padding: 10px;
+    display: flex;
     border: 0px;
     margin: 20px;
-    height: 20px;
+    align-items: center;
     font-size: 17px;
     color:#6e5b3b;
 }
@@ -110,25 +113,25 @@ p.explore{
     cursor: pointer;
 }
 .secnav{
-    margin-top: 20px;
+    overflow:hidden;
     flex-direction: column;
     display: flex;  
     justify-content: center;
     align-items: center;
-    height: 80px;
 }
 .secnav button{
     font-size: 30px;
     border: none;
     background-color:#d5b991;
     text-align: center;
+    display: none;
 }
 .secnav .navContent{
     position:static;
-    display: none;
+    visibility: hidden;
 }
 .secnav:hover .navContent{
-    display: block;
+    visibility: visible;
 }
 .secnav a{
     display: flex;
@@ -175,6 +178,14 @@ p.explore{
     src: url("RobotoMono-Bold.ttf");
 }
 @media (max-width:480px){
+    .secnav button{
+        display: block;
+    }
+    .explore{
+        width: 100%;
+        padding: 0px;
+        padding-bottom: 130px;
+    }
     .explore h1{
         font-size: 35px;
     }
@@ -183,6 +194,7 @@ p.explore{
     }
     .about{
         flex-direction: column;
+        width: 100%;
     }
     .leftDiv{
         width: 100%;
@@ -206,11 +218,7 @@ p.explore{
     .nav{
         visibility: hidden;
     }
-    .navmenu{
 
-        display: flex;
-        justify-content: center;
-    }
     p.navmenu:hover{
         cursor: pointer;
         text-decoration: underline;
