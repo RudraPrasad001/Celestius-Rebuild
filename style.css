@@ -160,8 +160,6 @@ p.explore{
 }
 .sticky-div p{
     font-family: robo;
-    margin-top: 9px;
-    margin-left: 35px;
     font-size: 13px;
 }
 .sticky-div {
@@ -178,6 +176,9 @@ p.explore{
     src: url("RobotoMono-Bold.ttf");
 }
 @media (max-width:480px){
+    body {
+        overflow-x: hidden !important;
+    }
     .secnav button{
         display: block;
     }
