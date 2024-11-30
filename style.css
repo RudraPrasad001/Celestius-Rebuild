@@ -183,6 +183,9 @@ p.explore{
         display: block;
     }
     .explore{
+        
+        max-width: 100% !important;
+        overflow-x: hidden !important;
         width: 100%;
         padding: 0px;
         padding-bottom: 250px;
@@ -194,6 +197,9 @@ p.explore{
         font-size:25px;
     }
     .about{
+        
+        max-width: 100% !important;
+        overflow-x: hidden !important;
         flex-direction: column;
         width: 100%;
         padding-left: 0px;
