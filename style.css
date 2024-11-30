@@ -48,7 +48,6 @@ p.explore{
 .rightDivContainer{
     display: flex;
     width: 40%;
-    padding-left: 20px;
     flex-wrap: wrap;
     flex-direction: row;
 }
@@ -182,7 +181,7 @@ p.explore{
         display: block;
     }
     .explore{
-        
+        box-sizing: border-box;
         max-width: 100% !important;
         overflow-x: hidden !important;
         width: 100%;
@@ -196,7 +195,7 @@ p.explore{
         font-size:25px;
     }
     .about{
-        
+        box-sizing: border-box;
         max-width: 100% !important;
         overflow-x: hidden !important;
         flex-direction: column;
@@ -210,7 +209,7 @@ p.explore{
     }
     .rightDivElements{
         
-        width: 43%;
+        width: 100%;
         font-size: 120px;
        
     }
