@@ -3,6 +3,58 @@ body{
     overflow-x: hidden;
     background-color: #d5b991;
 }
+
+.projects{
+    background-color: #ece3d4;
+    padding-top: 380px;
+    padding-bottom:380px;
+    padding-left: 200px;
+}
+
+.upcoming h1{
+    font-family:__DM_Sans_05e5f9, __DM_Sans_Fallback_05e5f9, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" ;
+}
+.upcoming{
+    background-color: #d4c2aa;
+    padding-top: 380px;
+    padding-bottom:380px;
+    padding-left: 200px;
+}
+.upcomingContainer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.upcomingElements h2{
+    font-family: robo;
+    color:#49381d ;
+}
+.calender{
+    margin-top: 20px;
+}
+.date{
+    color:#5f4e34;
+}
+.upcomingElements p{
+    vertical-align: top;
+    color:#7b664a;
+    font-family: robo;
+}
+.upcomingElements{
+   border: 0.5px solid white;
+   
+   width: 300px ;
+    flex-direction: column;
+    margin: 5px;
+    display: flex;
+    background-color: #e6d4bc;
+    padding: 30px;
+}
+.upcomingElements img{
+    float: left;
+    height: 40px;
+    width: 40px;
+}
 .rightDivElements img{
     height: 60px;
 }
@@ -24,7 +76,7 @@ p.explore{
 }
 .about{
     background-color: #ece3d4;
-    padding-left: 200px;
+    padding-left: 100px;
     padding-top:200px;
     padding-bottom: 200px;
     display: flex;
@@ -47,7 +99,7 @@ p.explore{
 }
 .rightDivContainer{
     display: flex;
-    width: 40%;
+    width: 50%;
     flex-wrap: wrap;
     flex-direction: row;
 }
@@ -66,6 +118,7 @@ p.explore{
 }
 .explore{
     padding: 140px;
+    margin-top: 50px;
     padding-bottom: 250px;
     justify-items: center;
     vertical-align: middle;
@@ -143,6 +196,7 @@ p.explore{
     margin-top: 30px;
     margin-right: 2px;
     height:40px;
+    width: 40px;
 }
 .sticky-div p{
     font-family: robo;
@@ -165,6 +219,29 @@ p.explore{
 }
 @media (max-width:480px){
 
+    .upcoming{
+    
+    padding-top: 50px;
+    padding-bottom:0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    }
+
+    .upcomingContainer{
+        margin-left: 10px;
+        flex-direction: column;
+    }
+    .upcomingElements {
+        width: 75%;
+    }
+    .upcomingElements p{
+        font-size: 15px;
+    }
+    .upcomingElements h2{
+        font-size: 20px;
+    }
+
+
     .navContent{
         visibility: visible;
     }
@@ -176,6 +253,7 @@ p.explore{
     }
 
     .explore{
+        margin-top: 140px;
         box-sizing: border-box;
         max-width: 100% !important;
         overflow-x: hidden !important;
