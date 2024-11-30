@@ -133,6 +133,7 @@ nav a:hover{
     flex-direction: row;
 }
 .upcomingContainer{
+    justify-content: center;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
