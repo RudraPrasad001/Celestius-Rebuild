@@ -96,7 +96,6 @@ p.explore{
     font-family: __Space_Mono_7dd02c, __Space_Mono_Fallback_7dd02c, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     flex-direction: row;
     display: flex;
-    margin-left: 26%;
 }
 .join{
     
