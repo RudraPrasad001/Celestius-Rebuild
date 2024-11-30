@@ -4,15 +4,96 @@ body{
     background-color: #d5b991;
 }
 
+.leftContact{
+    padding-right: 200px;
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.Contact{
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+}
+.Contact h1,h2,h3{
+    font-family: robo;
+    color: #33250f;
+}
+.contactHeading{
+    text-align: center;
+    
+    font-family: robo;
+    color: #33250f;
+
+}
+nav{
+    display: flex;
+    justify-content: center;
+}
+#Message{
+    height: 140px;
+}
+.sendMessage{
+    background-color: #d9cbb0;
+    padding: 10px;
+    display: flex;
+    border: 0px;
+    margin: 20px;
+    justify-content: center;
+    display: flex;
+    font-size: 17px;
+    color:#6e5b3b;
+}
+textarea:focus{
+    border: 10px solid #33250f;
+}
+.form{
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.form textarea{
+    height: 30px;
+    line-height: 30px;
+    color: #bca687;
+    background-color: #281f0e;
+    width: 100%;
+}
+nav a{
+    font-family:__Space_Mono_7dd02c, __Space_Mono_Fallback_7dd02c, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace ;
+    font-size: 20px;
+    text-decoration: none;
+    color:#49381d;
+    padding: 10px;
+}
+nav a:hover{
+    text-decoration: underline;
+}
+.Contact h1,h2{
+
+    text-align: center;
+}
+.Contact >p{
+   
+    text-align: center;
+   
+}
+.Contact p{
+    font-size: 20px;
+    color:#5c4c33;
+    font-family:__Space_Mono_7dd02c, __Space_Mono_Fallback_7dd02c, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace ;
+}
+
+
 .join:hover{
-    background-color: #cebb95;
+    background-color: #e3cc9f;
     cursor: pointer;
 }
 .projects{
     background-color: #ece3d4;
-    padding-top: 380px;
-    padding-bottom:380px;
-    padding-left: 80px;
+    padding: 40px;
 
 }
 
@@ -21,9 +102,7 @@ body{
 }
 .upcoming{
     background-color: #d4c2aa;
-    padding-top: 380px;
-    padding-bottom:380px;
-    padding-left: 50px;
+    padding: 140px;
 }
 .projectContainer{
     display: flex;
@@ -93,7 +172,7 @@ p.explore{
 }
 .about{
     background-color: #ece3d4;
-    padding-left: 100px;
+    padding-left: 50px;
     padding-top:200px;
     padding-bottom: 200px;
     display: flex;
@@ -244,10 +323,7 @@ p.explore{
     }
     .upcoming{
     
-    padding-top: 50px;
-    padding-bottom:0px;
-    padding-left: 30px;
-    padding-right: 0px;
+padding:10px
     }
 
     .upcomingContainer{
@@ -294,16 +370,34 @@ p.explore{
     .explore p{
         font-size:25px;
     }
+    .about h1{
+        text-align: center;
+    }
+    .upcoming h1{
+        text-align: center;
+    }
+    .projects h1{
+        text-align: center;
+    }
     .about{
         box-sizing: border-box;
         max-width: 100% !important;
         overflow-x: hidden !important;
         flex-direction: column;
         width: 100%;
-        padding-left: 10px;
-        padding-right: 0px;
-        padding-top: 0px;
+        padding: 10px;
     }
+    .form{
+        width: 100%;
+    }
+    .Contact{
+        flex-direction: column;
+    }
+    .leftContact p{
+        height: 100px;
+    }
+    .leftContact{
+        padding-right: 0px;}
     .leftDiv{
         width: 100%;
     }
