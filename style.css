@@ -12,7 +12,7 @@ body{
     background-color: #ece3d4;
     padding-top: 380px;
     padding-bottom:380px;
-    padding-left: 50px;
+
 
 }
 
@@ -239,24 +239,24 @@ p.explore{
     .projects{
         padding-top: 50px;
     padding-bottom:0px;
-    padding-left: 25px;
     padding-right: 0px;
+    padding-left: 20px;
     }
     .upcoming{
     
     padding-top: 50px;
     padding-bottom:0px;
-    padding-left: 0px;
+    padding-left: 10px;
     padding-right: 0px;
     }
 
     .upcomingContainer{
-        margin-left: 10px;
+        justify-content: center;
         flex-direction: column;
     }
     .upcomingElements {
         width: 75%;
-        padding: 5px;
+        justify-content: center;
     }
     .projectElement{
         padding:10px;
