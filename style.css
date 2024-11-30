@@ -95,6 +95,9 @@ p.explore{
     font-family: __Space_Mono_7dd02c, __Space_Mono_Fallback_7dd02c, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     flex-direction: row;
     display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 .join{
     
@@ -103,6 +106,7 @@ p.explore{
     display: flex;
     border: 0px;
     margin: 20px;
+    justify-content: center;
     align-items: center;
     font-size: 17px;
     color:#6e5b3b;
@@ -148,6 +152,7 @@ p.explore{
 .celestius{
     flex-direction: row;
     display:flex;
+    
 }
 .logo{
     overflow: auto;
@@ -160,13 +165,13 @@ p.explore{
     font-family: robo;
     font-size: 13px;
 }
-.sticky-div {
-    flex-direction: row;
-    display: flex;
+.sticky-div{
     flex-wrap: wrap;
-    background-color: #d5b991;
+    display: flexbox;
+    flex-direction: row;
     position: sticky;
-    top: 0px;
+    background-color: #d5b991;
+    top:0px;
 }
 
 @font-face{
@@ -174,6 +179,9 @@ p.explore{
     src: url("RobotoMono-Bold.ttf");
 }
 @media (max-width:480px){
+    .celestius{
+        flex-direction: column;
+    }
     body {
         overflow-x: hidden !important;
     }
@@ -223,8 +231,7 @@ p.explore{
         
         font-size: 100%;}
 
-    .nav{
-        visibility: hidden;
+    .nav{display: none;
     }
 
     p.navmenu:hover{
