@@ -2,6 +2,24 @@ body{
     margin: 0px;
     overflow-x: hidden;
     background-color: #d5b991;
+    
+}
+
+#about{
+    padding-top: 200px;
+    padding-bottom: 330px;
+}
+#events{
+    padding-bottom: 500px;
+}
+#contact{
+padding-top: 100px;
+}
+#projects{
+    padding-top: 150px;
+}
+html{
+    scroll-behavior: smooth;
 }
 
 .leftContact{
@@ -174,7 +192,6 @@ p.explore{
 .about{
     background-color: #ece3d4;
     padding-left: 50px;
-    padding-top:200px;
     padding-bottom: 200px;
     display: flex;
 }
@@ -381,6 +398,7 @@ padding:10px
         text-align: center;
     }
     .about{
+        padding-top: 100px;
         box-sizing: border-box;
         max-width: 100% !important;
         overflow-x: hidden !important;
@@ -389,9 +407,17 @@ padding:10px
         padding: 10px;
     }
     .form{
-        padding-right: 19px;
         padding-left: 0px;
         width: 100%;
+    }
+    #about{
+        padding-top:120px;
+    }
+    #projects{
+        padding-top: 120px;
+    }
+    #events{
+        padding-top: 120px;
     }
     .Contact{
         justify-content: center;
