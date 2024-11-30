@@ -55,7 +55,7 @@ p.explore{
     padding: 8px;
     align-items: center;
     flex-direction: column;
-    max-width: 310px;
+    max-width: 290px;
     display: flex;
     overflow: hidden;
     flex-wrap: wrap;
@@ -107,39 +107,18 @@ p.explore{
     border: 0px;
     margin: 20px;
     justify-content: center;
-    align-items: center;
+    display: inline-flex;
     font-size: 17px;
     color:#6e5b3b;
 }
  button:hover{
     cursor: pointer;
 }
-.secnav{
-    overflow:hidden;
-    flex-direction: column;
-    display: flex;  
-    justify-content: center;
-    align-items: center;
-}
-.secnav button{
-    font-size: 30px;
-    border: none;
-    background-color:#d5b991;
-    text-align: center;
-    display: none;
-}
-.secnav .navContent{
-    position:static;
+
+.navContent{
     visibility: hidden;
 }
-.secnav:hover .navContent{
-    visibility: visible;
-}
-.secnav a{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
+
 .navlink{
     padding: 10px;
     font-size: 20px;
@@ -149,17 +128,21 @@ p.explore{
 .navlink:hover{
     text-decoration: underline;
 }
+#celestiusP{
+    font-size: 30px;
+}
 .celestius{
+    
+    justify-content: start;
     flex-direction: row;
     display:flex;
-    
 }
 .logo{
     overflow: auto;
     float: left;
-    margin-top: 10px;
-    margin-left: 2px;
-    height:30px;
+    margin-top: 30px;
+    margin-right: 2px;
+    height:40px;
 }
 .sticky-div p{
     font-family: robo;
@@ -167,8 +150,10 @@ p.explore{
 }
 .sticky-div{
     flex-wrap: wrap;
-    display: flexbox;
+    display: flex;
+    align-items: center;
     flex-direction: row;
+    justify-content: center;
     position: sticky;
     background-color: #d5b991;
     top:0px;
@@ -179,15 +164,17 @@ p.explore{
     src: url("RobotoMono-Bold.ttf");
 }
 @media (max-width:480px){
+
+    .navContent{
+        visibility: visible;
+    }
     .celestius{
-        flex-direction: column;
+        justify-content: center;
     }
     body {
         overflow-x: hidden !important;
     }
-    .secnav button{
-        display: block;
-    }
+
     .explore{
         box-sizing: border-box;
         max-width: 100% !important;
@@ -208,7 +195,7 @@ p.explore{
         overflow-x: hidden !important;
         flex-direction: column;
         width: 100%;
-        padding-left: 0px;
+        padding-left: 10px;
         padding-right: 0px;
         padding-top: 0px;
     }
@@ -217,7 +204,7 @@ p.explore{
     }
     .rightDivElements{
         
-        width: 100%;
+        width: 42%;
         font-size: 120px;
        
     }
@@ -226,7 +213,13 @@ p.explore{
         width: 100%;
         padding-left: 0px;
     }
-
+    .logo{
+        margin-top: 20px;
+        height: 30px;
+    }
+    #celestiusP{
+        font-size: 20px;
+    }
     .navlink{
         
         font-size: 100%;}
@@ -234,9 +227,5 @@ p.explore{
     .nav{display: none;
     }
 
-    p.navmenu:hover{
-        cursor: pointer;
-        text-decoration: underline;
-    }
 
 }
