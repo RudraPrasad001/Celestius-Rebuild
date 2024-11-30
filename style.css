@@ -53,6 +53,7 @@ textarea:focus{
     width: 40%;
     flex-direction: column;
     flex-wrap: wrap;
+    padding-left: 200px;
 }
 .form textarea{
     height: 30px;
@@ -388,6 +389,7 @@ padding:10px
         padding: 10px;
     }
     .form{
+        padding-left: 0px;
         width: 100%;
     }
     .Contact{
